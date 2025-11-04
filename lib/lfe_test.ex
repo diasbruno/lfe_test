@@ -13,6 +13,6 @@ defmodule LfeTest do
 
   """
   def hello do
-    :world
+    ex."a-function"()
   end
 end
