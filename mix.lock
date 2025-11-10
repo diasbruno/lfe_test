@@ -1,9 +1,11 @@
 %{
   "color": {:hex, :erlang_color, "1.0.0", "145fe1d2e65c4516e4f03fefca6c2f47ebad5899d978d70382a5cfe643e4ac9e", [:rebar3], [], "hexpm", "6b17e5e589c8fef540574c9ea32b67cec2c8a44283aafe474d6e5818fb3ee038"},
-  "dep_from_git": {:git, "https://github.com/diasbruno/lfe.git", "1acfa01be7e9af827f35487524d9a6ce84fb20df", [tag: "ensure-directory-exists-before-writing-beam-file"]},
-  "lfe": {:hex, :lfe, "2.2.0", "bc64671f39551e05442b51134d35b1a5392e2a7f766881afc2215faf1bdb64aa", [:rebar3], [], "hexpm", "c09223cc0bf3ec120b791371f6aa3f10cd5a1d1feeb43fb08b3f4a31d6717749"},
+  "elvis_core": {:hex, :elvis_core, "4.1.1", "0f69e9f1512c1ea68c65abc805079dc3a5b22e0e16e0de8dddbb780a43d007a9", [:rebar3], [{:katana_code, "~> 2.4.0", [hex: :katana_code, repo: "hexpm", optional: false]}, {:zipper, "1.1.0", [hex: :zipper, repo: "hexpm", optional: false]}], "hexpm", "80a562574b8d974a2e7544e9a9455716d04c9e095dbc8c8915e2468031dd1385"},
+  "hex_core": {:hex, :hex_core, "0.10.3", "7dc866ca8f5830566aacef141bdde4f1d61f687407c7070611c349e983f185d2", [:rebar3], [], "hexpm", "bc7c2b6ceb99e29550f74234952ad3b8153e6f2dbc38892bd0ff46043be073f5"},
+  "katana_code": {:hex, :katana_code, "2.4.1", "4c116dc6cf6e5abcfbb95bd904ebeed36d79463d1eed349cf47a828f4723bac4", [:rebar3], [], "hexpm", "58efc63b5d9dabc82230cab50cde7f7b259287a690ed699f79a7fa80f49b0b3a"},
   "ltest": {:hex, :ltest, "0.13.11", "c85c848f178a926935daf65c975a1289e9b68a5054a4fcd5bf21b3e9bcbc1c41", [:rebar3], [{:color, "~> 1.0.0", [hex: :erlang_color, repo: "hexpm", optional: false]}, {:lfe, "~> 2.2", [hex: :lfe, repo: "hexpm", optional: false]}], "hexpm", "4f6271e85fc7fe5c4447d1538ca28d5ad23f201fd915ee053c37c927eb41dad5"},
-  "lutil": {:hex, :lutil, "0.10.0-rc6", "c3a560c9ed8cdc34b689591cf60336981ad4ea6ce299624ba87191d3fffb8da2", [:rebar3], [], "hexpm", "dc26b486e448bfb06ecaaddd5c9ce6c03bd39467058fcd3d8833cc7babbffd58"},
-  "mix_lfe": {:git, "https://github.com/diasbruno/mix_lfe.git", "36d37dbdbf1ee1003a1f146f425babcbc9e7f134", [tag: "update-lfe-versions"]},
-  "rebar3_lfe": {:hex, :rebar3_lfe, "0.5.4", "807bfaaf1e38e10eac161a72c360402befe0e359024e137b75d04f237cd3085d", [:rebar3], [{:lfe, "2.2.0", [hex: :lfe, repo: "hexpm", optional: false]}], "hexpm", "fcc26d57a011949fbf05ae10e4f228e07a76485fa676e6ef9a1cdda110f363a8"},
+  "rebar3_hex": {:git, "https://github.com/erlef/rebar3_hex.git", "2cc1d3d45041da3802160568d4b38a10dccf5853", [tag: "v7.0.11"]},
+  "rebar3_lint": {:hex, :rebar3_lint, "4.1.1", "b8bc3cea15e3d569648888a2d927c9b6a2459d1d5181f45076b9a636c45c75f5", [:rebar3], [{:elvis_core, "4.1.1", [hex: :elvis_core, repo: "hexpm", optional: false]}], "hexpm", "c63ee4078f7fecdd8a8c07e5a4016e4971a314b06581193219017998ad13e82f"},
+  "verl": {:hex, :verl, "1.1.1", "98f3ec48b943aa4ae8e29742de86a7cd752513687911fe07d2e00ecdf3107e45", [:rebar3], [], "hexpm", "0925e51cd92a0a8be271765b02430b2e2cff8ac30ef24d123bd0d58511e8fb18"},
+  "zipper": {:hex, :zipper, "1.1.0", "fa775c01bcd33225be89af320c10ce61d23943109f4d5ca718551d0c492d7e35", [:rebar3], [], "hexpm", "4644c83ae83ef3c09860cb5ed597b0c759fbbcd64ad5b00a62f51ae48aef7535"},
 }

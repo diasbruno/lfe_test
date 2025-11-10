@@ -3,6 +3,6 @@ defmodule LfeTestTest do
   doctest LfeTest
 
   test "greets the world" do
-    assert LfeTest.hello() == :world
+    assert LfeTest.hello() == true
   end
 end

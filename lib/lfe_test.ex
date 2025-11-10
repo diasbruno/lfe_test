@@ -9,10 +9,10 @@ defmodule LfeTest do
   ## Examples
 
       iex> LfeTest.hello()
-      :world
+      true
 
   """
   def hello do
-    ex."a-function"()
+    :ex.'a-function'()
   end
 end

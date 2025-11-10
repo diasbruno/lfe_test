@@ -5,29 +5,29 @@ defmodule LfeTest.MixProject do
     [
       app: :lfe_test,
       version: "0.1.0",
-      elixir: "~> 1.15",
+      elixir: "1.18.4",
       start_permanent: Mix.env() == :prod,
-      compilers: Mix.compilers() ++ [:lfe],
+      compilers: [:lfe] ++ Mix.compilers(),
       deps: deps()
+      # compile_path: ["lib"]
     ]
   end
 
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger]
+      extra_applications: [:logger, :rebar3_lfe]
     ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
-      # {:lfe, git: "https://github.com/diasbruno/lfe.git", tag: "ensure-directory-exists-before-writing-beam-file"},
-      {:mix_lfe, git: "https://github.com/diasbruno/mix_lfe.git", tag: "update-lfe-versions", only: [:dev, :test], app: false},
-      {:rebar3_lfe, "0.5.4"},
-      {:lfe, "2.2.0"}
+      {:rebar3_hex, git: "https://github.com/erlef/rebar3_hex.git", tag: "v7.0.11", override: true},
+      {:lfe, path: "../lfe", override: true},
+      {:mix_lfe, path: "../mix_lfe", only: [:dev, :test], app: false, override: true},
+      {:rebar3_lfe, path: "../rebar3_lfe", override: true},
+      {:rebar3_lint, "4.1.1", override: true}
     ]
   end
 end
